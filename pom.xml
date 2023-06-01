@@ -27,24 +27,23 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            &lt;!&ndash; ALWAYS required, usually included transitively. &ndash;&gt;-->
-<!--            <groupId>com.openhtmltopdf</groupId>-->
-<!--            <artifactId>openhtmltopdf-core</artifactId>-->
-<!--            <version>${openhtml.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            &lt;!&ndash; Required for PDF output. &ndash;&gt;-->
-<!--            <groupId>com.openhtmltopdf</groupId>-->
-<!--            <artifactId>openhtmltopdf-pdfbox</artifactId>-->
-<!--            <version>${openhtml.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            &lt;!&ndash; Optional, leave out if you do not need logging via slf4j. &ndash;&gt;-->
-<!--            <groupId>com.openhtmltopdf</groupId>-->
-<!--            <artifactId>openhtmltopdf-slf4j</artifactId>-->
-<!--            <version>${openhtml.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <!-- ALWAYS required, usually included transitively. -->
+            <groupId>com.openhtmltopdf</groupId>
+            <artifactId>openhtmltopdf-core</artifactId>
+            <version>${openhtml.version}</version>
+        </dependency>
+        <dependency>
+            <!-- Required for PDF output. -->
+            <groupId>com.openhtmltopdf</groupId>
+            <artifactId>openhtmltopdf-pdfbox</artifactId>
+            <version>${openhtml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.openhtmltopdf</groupId>
+            <artifactId>openhtmltopdf-slf4j</artifactId>
+            <version>${openhtml.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
