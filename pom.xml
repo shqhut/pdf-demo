@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.shq</groupId>
+    <artifactId>pdf-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>2.7.5</spring-boot.version>
+        <openhtml.version>1.0.10</openhtml.version>
+    </properties>
+
+    <dependencies>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            &lt;!&ndash; ALWAYS required, usually included transitively. &ndash;&gt;-->
+<!--            <groupId>com.openhtmltopdf</groupId>-->
+<!--            <artifactId>openhtmltopdf-core</artifactId>-->
+<!--            <version>${openhtml.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            &lt;!&ndash; Required for PDF output. &ndash;&gt;-->
+<!--            <groupId>com.openhtmltopdf</groupId>-->
+<!--            <artifactId>openhtmltopdf-pdfbox</artifactId>-->
+<!--            <version>${openhtml.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            &lt;!&ndash; Optional, leave out if you do not need logging via slf4j. &ndash;&gt;-->
+<!--            <groupId>com.openhtmltopdf</groupId>-->
+<!--            <artifactId>openhtmltopdf-slf4j</artifactId>-->
+<!--            <version>${openhtml.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>html2pdf</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
